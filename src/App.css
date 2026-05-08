@@ -36,8 +36,11 @@ section { padding: 5rem 2rem; }
 .hero-visual { position: relative; display: flex; justify-content: center; }
 .avatar-ring { width: 320px; height: 320px; border-radius: 50%; background: linear-gradient(135deg, var(--warm), var(--sand)); display: flex; align-items: center; justify-content: center; position: relative; }
 .avatar-ring::before { content: ''; position: absolute; inset: -8px; border-radius: 50%; border: 2px dashed var(--sand); }
-.avatar-initials { font-family: var(--font-head); font-size: 5rem; color: var(--terracotta); font-style: italic; }
-.float-badge { position: absolute; background: #fff; border: 1px solid var(--sand); border-radius: 12px; padding: 0.6rem 0.9rem; font-size: 0.78rem; color: var(--mid); box-shadow: 0 4px 16px rgba(0,0,0,0.06); }
+
+/* Avatar Image Rules */
+.avatar-image { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; position: relative; z-index: 2; }
+
+.float-badge { position: absolute; background: #fff; border: 1px solid var(--sand); border-radius: 12px; padding: 0.6rem 0.9rem; font-size: 0.78rem; color: var(--mid); box-shadow: 0 4px 16px rgba(0,0,0,0.06); z-index: 3; }
 .float-badge.b1 { bottom: 30px; left: -10px; }
 .float-badge.b2 { top: 30px; right: -10px; }
 .float-badge strong { color: var(--deep); display: block; font-weight: 500; }

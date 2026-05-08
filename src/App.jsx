@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import profilePic from './profile.jpg'; /* THIS IS THE FIX! */
 
 function App() {
   return (
@@ -24,9 +25,9 @@ function App() {
         <div className="container">
           <div className="hero-grid">
             <div>
-              <div className="hero-tag">Open to internships, Graduate Program and work opportunities</div>
+              <div className="hero-tag">Open to internship opportunities</div>
               <h1 className="hero-name">Hi, I'm <span>Chun Lim</span><br />Mongkonkrit</h1>
-              <p className="hero-sub">AI & Machine Learning researcher · Full-Stack Developer · Based in Adelaide, SA · building intelligent systems that bridge data science and real-world applications.</p>
+              <p className="hero-sub">AI & Machine Learning researcher · Full-Stack Developer · Based in Adelaide, SA — building intelligent systems that bridge data science and real-world applications.</p>
               <div className="hero-btns">
                 <a href="#contact" className="btn-primary">Get in touch</a>
                 <a href="#projects" className="btn-outline">View my work</a>
@@ -34,7 +35,8 @@ function App() {
             </div>
             <div className="hero-visual">
               <div className="avatar-ring">
-                <div className="avatar-initials">CL</div>
+                {/* THIS IS WHERE THE IMAGE IS RENDERED USING THE VARIABLE */}
+                <img src={profilePic} alt="Chun Lim" className="avatar-image" />
               </div>
               <div className="float-badge b1">
                 <strong>MSc Computer Science</strong>
@@ -156,7 +158,7 @@ function App() {
               <h3>Speech Emotion Recognition (Research)</h3>
               <p>An ML model developed as part of my Masters research to classify speaker emotional states from audio data. Involves feature extraction from speech signals, deep learning model training, and temporal trend prediction.</p>
               <div className="project-stack">
-                <span className="stack-tag">Python</span><span class="stack-tag">PyTorch</span><span className="stack-tag">Signal Processing</span><span className="stack-tag">scikit-learn</span>
+                <span className="stack-tag">Python</span><span className="stack-tag">PyTorch</span><span className="stack-tag">Signal Processing</span><span className="stack-tag">scikit-learn</span>
               </div>
               <a href="#research" className="project-link">Read more →</a>
             </div>
@@ -196,6 +198,17 @@ function App() {
             <div className="timeline-item">
               <div className="timeline-dot"></div>
               <div className="timeline-header">
+                <div className="timeline-role">Three Topics Representative</div>
+                <div className="timeline-date">Aug 2025 – Nov 2025</div>
+              </div>
+              <div className="timeline-org">Flinders University Student Association (FUSA)</div>
+              <ul className="timeline-desc">
+                <li>Volunteered as a student representative, advocating on behalf of the student body across three topic areas.</li>
+              </ul>
+            </div>
+            <div className="timeline-item">
+              <div className="timeline-dot"></div>
+              <div className="timeline-header">
                 <div className="timeline-role">Import Specialist</div>
                 <div className="timeline-date">Mar 2021 – Aug 2022</div>
               </div>
@@ -204,17 +217,6 @@ function App() {
                 <li>Managed complex import/export logistics including HS Code verification, duty tax calculations, and insurance arrangements.</li>
                 <li>Coordinated with international shipping agencies including DHL and FedEx, and communicated with Thai Customs.</li>
                 <li>Received a Kaizen Award for a process improvement that solved a critical workflow bottleneck and increased productivity.</li>
-              </ul>
-            </div>
-            <div className="timeline-item">
-              <div className="timeline-dot"></div>
-              <div className="timeline-header">
-                <div className="timeline-role">Three Topics Representative</div>
-                <div className="timeline-date">Aug 2025 – Nov 2025</div>
-              </div>
-              <div className="timeline-org">Flinders University Student Association (FUSA)</div>
-              <ul className="timeline-desc">
-                <li>Volunteered as a student representative, advocating on behalf of the student body across three topic areas.</li>
               </ul>
             </div>
           </div>
@@ -344,7 +346,7 @@ function App() {
                   <div className="contact-link-icon">💻</div>
                   github.com/chunlimza555
                 </a>
-                <a href="https://www.linkedin.com/in/chun-lim-8509b0204" className="contact-link">
+                <a href="#" className="contact-link">
                   <div className="contact-link-icon">💼</div>
                   LinkedIn Profile
                 </a>
