@@ -169,7 +169,7 @@ function App() {
               <div className="project-stack">
                 <span className="stack-tag">Python</span><span className="stack-tag">Pandas</span><span className="stack-tag">scikit-learn</span><span className="stack-tag">Matplotlib</span><span className="stack-tag">Jupyter</span>
               </div>
-              <a href="https://github.com/chunlimza555" className="project-link">View GitHub →</a>
+              <a href="https://github.com/chunlimza555/Weather_api" className="project-link">View GitHub →</a>
             </div>
           </div>
         </div>
@@ -346,7 +346,7 @@ function App() {
                   <div className="contact-link-icon">💻</div>
                   github.com/chunlimza555
                 </a>
-                <a href="#" className="contact-link">
+                <a href="https://www.linkedin.com/in/chun-lim-8509b0204/" className="contact-link">
                   <div className="contact-link-icon">💼</div>
                   LinkedIn Profile
                 </a>
